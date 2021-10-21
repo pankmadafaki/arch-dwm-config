@@ -4,7 +4,7 @@
 static const char *upvol[]   = { "/usr/bin/pactl", "set-sink-volume", "1", "+5%",     NULL };
 static const char *downvol[] = { "/usr/bin/pactl", "set-sink-volume", "1", "-5%",     NULL };
 static const char *mutevol[] = { "/usr/bin/pactl", "set-sink-mute",   "1", "toggle",  NULL };
-static const unsigned int borderpx  = 1;        /* border pixel of windows */
+static const unsigned int borderpx  = 2;        /* border pixel of windows */
 static const unsigned int gappx     = 10;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int CORNER_RADIUS 	    = 0;
@@ -17,7 +17,7 @@ static const int vertpadbar         = 0;        /* vertical padding for statusba
 static const char *fonts[]          = { "FiraCode Nerd Font Mono:size=10" };
 static const char dmenufont[]       = "FiraCode Nerd Font Mono:size=10";
 static const char col_gray1[]       = "#222222";
-static const char col_gray2[]       = "#444444";
+static const char col_gray2[]       = "#2e3440";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#81a1c1";
