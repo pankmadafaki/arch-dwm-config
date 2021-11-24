@@ -1,20 +1,35 @@
---- dwm.c	Mon Feb 24 21:41:55 2020
-+++ dwm.c	Mon Feb 24 21:48:42 2020
-@@ -242,6 +243,7 @@
- static int xerrordummy(Display *dpy, XErrorEvent *ee);
- static int xerrorstart(Display *dpy, XErrorEvent *ee);
- static void xinitvisual();
-+static void drawroundedcorners(Client *c);
+--- dwm.c	2012-08-25 12:34:20.847202795 -0400
++++ dwm.c	2012-08-25 12:05:54.180592952 -0400
+@@ -1703,6 +1704,32 @@ textnw(const char *text, unsigned int le
+ }
  
- /* variables */
- static const char broken[] = "broken";
-@@ -1446,6 +1500,9 @@
- 
- 			if (!selmon->lt[selmon->sellt]->arrange || c->isfloating)
- 				resize(c, nx, ny, nw, nh, 1);
+ void
++col(Monitor *m) {
++	unsigned int i, n, h, w, x, y,mw;
++	Client *c;
 +
-+            drawroundedcorners(c);
++	for(n = 0, c = nexttiled(m->clients); c; c = nexttiled(c->next), n++);
++	if(n == 0)
++		return;
++        if(n > m->nmaster)
++                mw = m->nmaster ? m->ww * m->mfact : 0;
++        else
++                mw = m->ww;
++	for(i = x = y = 0, c = nexttiled(m->clients); c; c = nexttiled(c->next), i++) {
++		if(i < m->nmaster) {
++			 w = (mw - x) / (MIN(n, m->nmaster)-i);
++                         resize(c, x + m->wx, m->wy, w - (2*c->bw), m->wh - (2*c->bw), False);
++			x += WIDTH(c);
++		}
++		else {
++			h = (m->wh - y) / (n - i);
++			resize(c, x + m->wx, m->wy + y, m->ww - x  - (2*c->bw), h - (2*c->bw), False);
++			y += HEIGHT(c);
++		}
++	}
++}
 +
- 			break;
- 		}
- 	} while (ev.type != ButtonRelease);
++void
+ tile(Monitor *m) {
+ 	unsigned int i, n, h, mw, my, ty;
+ 	Client *c;

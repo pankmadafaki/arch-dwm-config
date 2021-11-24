@@ -1,4 +1,6 @@
-set default-bg "#4c566a"
+set default-bg "#2E3440"
 set recolor true
-set recolor-lightcolor "#4c566a"
+set recolor-lightcolor "#2E3440"
 set recolor-darkcolor "#eceff4"
+set highlight-color "#89AACB"
+set highlight-active-color "#89AACB"

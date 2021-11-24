@@ -35,6 +35,7 @@ if [ -f "$userresources" ]; then
 
 fi
 
+setxkbmap us altgr-intl
 if [ -f "$usermodmap" ]; then
     xmodmap "$usermodmap"
 fi
@@ -52,11 +53,14 @@ fi
 
 
 #display resolution
-xrandr --output DisplayPort-0 --primary --mode 1920x1080 --pos 1920x0 --rotate normal --output DisplayPort-1 --off --output DisplayPort-2 --off --output HDMI-A-0 --mode 1920x1080 --pos 0x0 --rotate normal
-#compositor
-picom --experimental-backends &
 
+#compositor
+xrandr --output DisplayPort-0 --primary --mode 2560x1440 --rate 165 --pos 1920x0 --rotate normal --output DisplayPort-1 --mode 1920x1080 --pos 0x0 --rotate normal --output DisplayPort-2 --off --output HDMI-A-0 --off
+
+picom --experimental-backends &
 # wallpaper
+
+
 nitrogen --restore &
 
 # loop
@@ -66,5 +70,5 @@ done
 #set monitor config
 
 #execute dwm
-exec dwm
+exec dwm 
 
