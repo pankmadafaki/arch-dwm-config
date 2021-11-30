@@ -332,30 +332,6 @@ stty: 'standard input': Inappropriate ioctl for device
 stty: 'standard input': Inappropriate ioctl for device
 stty: 'standard input': Inappropriate ioctl for device
 /usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
-stty: 'standard input': Inappropriate ioctl for device
-stty: 'standard input': Inappropriate ioctl for device
-/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
-stty: 'standard input': Inappropriate ioctl for device
-stty: 'standard input': Inappropriate ioctl for device
-/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
-stty: 'standard input': Inappropriate ioctl for device
-stty: 'standard input': Inappropriate ioctl for device
-/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
-stty: 'standard input': Inappropriate ioctl for device
-stty: 'standard input': Inappropriate ioctl for device
-/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
-stty: 'standard input': Inappropriate ioctl for device
-stty: 'standard input': Inappropriate ioctl for device
-/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
-stty: 'standard input': Inappropriate ioctl for device
-stty: 'standard input': Inappropriate ioctl for device
-/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
-stty: 'standard input': Inappropriate ioctl for device
-stty: 'standard input': Inappropriate ioctl for device
-/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
-stty: 'standard input': Inappropriate ioctl for device
-stty: 'standard input': Inappropriate ioctl for device
-/usr/bin/bashtop: line 660: ((: <80 | <24: syntax error: operand expected (error token is "<80 | <24")
 Terminated
  
 New instance of bashtop version: 0.9.25 Pid: 2137
@@ -500,3 +476,27 @@ Signal 1 (HUP) caught by ps (3.3.17).
 New instance of bashtop version: 0.9.25 Pid: 24179
  
 New instance of bashtop version: 0.9.25 Pid: 5051
+ 
+New instance of bashtop version: 0.9.25 Pid: 2815
+ 
+New instance of bashtop version: 0.9.25 Pid: 3614
+ 
+New instance of bashtop version: 0.9.25 Pid: 4103
+ 
+New instance of bashtop version: 0.9.25 Pid: 18885
+ 
+New instance of bashtop version: 0.9.25 Pid: 1194
+ 
+New instance of bashtop version: 0.9.25 Pid: 5165
+ 
+New instance of bashtop version: 0.9.25 Pid: 2231
+ 
+New instance of bashtop version: 0.9.25 Pid: 5315
+ 
+New instance of bashtop version: 0.9.25 Pid: 8089
+ 
+New instance of bashtop version: 0.9.25 Pid: 12957
+ 
+New instance of bashtop version: 0.9.25 Pid: 3503
+ 
+New instance of bashtop version: 0.9.25 Pid: 6633
